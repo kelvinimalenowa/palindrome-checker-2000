@@ -2,7 +2,7 @@
 document.querySelector('#checkButton').addEventListener('click', checkPal)
 
 //check if the palindrome is true
-async function checkPal() {
+function checkPal() {
     
     const input = document.querySelector('#nameInput').value
 

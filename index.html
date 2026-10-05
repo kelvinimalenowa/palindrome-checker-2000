@@ -1,23 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-    	<meta charset="utf-8">
-    	<meta name="description" content="This is where your description goes">
-    	<meta name="keywords" content="one, two, three">
 
-		<title>Title in the tab</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="This is where your description goes">
+	<meta name="keywords" content="one, two, three">
 
-		<!-- external CSS link -->
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css">
-	</head>
-	<body>
-		<h1>The Palindrome Checkah</h1>
-		<p>Find out whether your name is a Palindrome, Boston style. Harvard.</p>
-		<input type="text" name="name" id="nameInput">
-		<button id="checkButton">Check</button>
-		<h3></h3>
+	<title>PALINDROME SCANNER</title>
 
-		<script type="text/javascript" src="js/main.js"></script>
-	</body>
+	<!-- external CSS link -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<main class="scanner">
+		<h1>PALINDROME SCANNER</h1>
+
+		<p class="description">
+			Enter a word or phrase to determine its palindrome status.
+		</p>
+
+		<div class="screen">
+			<label for="nameInput">INPUT:</label>
+
+			<input type="text" name="name" id="nameInput" placeholder="TYPE HERE...">
+
+			<button id="checkButton">SCAN</button>
+		</div>
+
+		<div class="result">
+			<p>SCAN RESULT:</p>
+			<h3></h3>
+		</div>
+	</main>
+
+	<script src="js/main.js"></script>
+</body>
+
 </html>

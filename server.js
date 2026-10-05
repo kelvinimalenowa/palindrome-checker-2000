@@ -14,18 +14,23 @@ const server = http.createServer(function (req, res) {
       res.end();
     });
   }
+
+
   else if (page == '/palindrome') {
     const input = params.palindrome
     const cleanedStr = input.toLowerCase().replace(/[^a-z0-9]/g, '')
     const reversedStr = cleanedStr.split('').reverse().join('')
 
     if (cleanedStr === reversedStr){
-      res.write(`It's a palindrome.`)
+      res.writeHead(200, { 'Content-Type': 'text/javascript' });
+      res.write(`Palindrome SUCCESS.`)
     } else {
-      res.write(`It is not a palindrome.`)
+      res.write(`ERROR 404! Text input is not a palindrome.`)
     }
     res.end();
   }
+
+
   else if (page == '/css/style.css') {
     fs.readFile('css/style.css', function (err, data) {
       res.write(data);
@@ -38,7 +43,8 @@ const server = http.createServer(function (req, res) {
       res.write(data);
       res.end();
     });
-  } else {
+  } 
+  else {
     res.writeHead(404);
     res.end('Not found');
   }
