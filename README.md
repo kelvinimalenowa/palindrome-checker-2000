@@ -1,22 +1,42 @@
-# ↔️ Week08 Bootcamp2019a Project: Server Side Palindrome Checker
+# 🔍 Palindrome Scanner
 
-### Goal: Create a simple web application that uses the fs and http modules to validate if a string is a palindrome server side.
+Palindrome Scanner is a simple JavaScript application that checks whether a word or phrase is a palindrome, meaning it reads the same forward and backward.
 
-### How to submit your code for review:
+I built this project to practice working with strings, user input, functions, and conditional logic in JavaScript on the server side, while presenting the checker through a Y2K-inspired scanning interface.
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+## 📸 Project Preview
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+![Palindrome Scanner project preview](assets/mockup.jpg)
+
+## ✨ Features
+
+- Enter a word or phrase to scan
+- Check whether the input is a palindrome
+- Display the result directly on the page
+- Y2K-inspired scanning interface
+
+## 🛠️ Built With
+
+- HTML5
+- CSS3
+- JavaScript
+- Node.js
+
+## 🧠 What I Learned
+
+This project helped me strengthen my understanding of:
+
+- Working with user input
+- Manipulating strings in JavaScript
+- Using JavaScript functions
+- Writing conditional logic with `if` and `else`
+- Comparing values
+- Selecting and updating DOM elements
+- Using event listeners to respond to user interactions
+- Connecting JavaScript logic to a visual interface
+
+## 🔎 How It Works
+
+Enter a word or phrase into the scanner and submit it.
+
+The application processes the input and compares it to its reversed version. If both versions match, the scanner identifies the input as a palindrome. If they do not match, the scanner returns a negative result.
