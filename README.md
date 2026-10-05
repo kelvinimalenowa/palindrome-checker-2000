@@ -6,7 +6,7 @@ I built this project to practice working with strings, user input, functions, an
 
 ## 📸 Project Preview
 
-![Palindrome Scanner project preview](assets/mockup.jpg)
+![Palindrome Scanner project preview](assets/mockup.png)
 
 ## ✨ Features
 
